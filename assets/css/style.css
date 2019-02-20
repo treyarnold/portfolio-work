@@ -1,7 +1,23 @@
-header {
-    background: white;
+header, .card {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    width: 960px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.me {
+    float: left;
 }
 
 body {
-    background-image: "assets\images\white-waves.png";
+    background-image: url("https://images.unsplash.com/photo-1548685913-fe6678babe8d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1923&q=80");
+    background-repeat: no-repeat;
+    background-attachment: fixed;   
+    background-size: cover;
+}
+
+img {
+    width: 25%;;
 }
