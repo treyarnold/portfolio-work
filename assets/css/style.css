@@ -1,27 +1,25 @@
 .header {
     margin: auto;
     background-color: #ffffff;
-    width: 960px;
+    width: 926px;
     padding: 1rem 0;
 }
 
 .card {
     margin: auto;
     background-color: #ffffff;
-    width: 960px;
-    padding: 1rem;
+    width: 894px;
+    padding: 2rem;
     border: 1px solid #dddddd;
 }
 
 .heading-links {
-    display: inline;
     float: right;
     margin-right: -2rem;
 }
 
 .heading-link {
     color: gray;
-    /* float: right; */
     padding: 0 1rem;
 }
 
@@ -41,6 +39,7 @@
 
 .content-heading {
     color: #4aaaa5;
+    margin-bottom: 2rem;
 }
 
 .me {
@@ -56,6 +55,24 @@ header {
     border-bottom: 2px solid #cccccc;
     margin-bottom: 2rem;
     font-family: 'Georgia', Times, 'Times New Roman', serif;
+}
+
+form label{
+    display: block;
+    margin-bottom: 1rem;
+}
+
+input[type=text], textarea {
+    margin-bottom: 1rem;
+    width: 874px;    
+    padding: .5rem; 
+}
+
+input[type=submit] {
+    background: #4aaaa5;
+    border: none;
+    padding: 1rem 2rem;
+    color: #ffffff;
 }
 
 body {
