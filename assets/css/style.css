@@ -13,9 +13,10 @@
     border: 1px solid #dddddd;
 }
 
-.heading-links {
+nav {
     float: right;
     margin-right: -2rem;
+    margin-top: .3rem;
 }
 
 .heading-link {
