@@ -1,3 +1,21 @@
+body {
+    background-image: url("https://images.unsplash.com/photo-1548685913-fe6678babe8d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1923&q=80");
+    background-repeat: no-repeat;
+    background-attachment: fixed;   
+    background-size: cover;
+    margin-top: 0;
+    color: #777777;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+/* Styling for the header */
+header {
+    background: #ffffff;
+    border-bottom: 2px solid #cccccc;
+    margin-bottom: 2rem;
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+}
+
 .header {
     margin: auto;
     background-color: #ffffff;
@@ -5,13 +23,17 @@
     padding: 1rem 0;
 }
 
-.card {
-    margin: auto;
-    background-color: #ffffff;
-    width: 894px;
-    padding: 2rem;
-    border: 1px solid #dddddd;
-    /* height: 600px; */
+h1 {
+    display: inline;
+}
+
+.header-name {
+    background: #4aaaa5;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    padding: 1.1rem;
+    margin-left: -1rem;
 }
 
 nav {
@@ -26,19 +48,67 @@ nav {
     text-decoration: none;
 }
 
+#portfolio {
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+}
+
+/* Styling for the main card */
+.card {
+    margin: auto;
+    background-color: #ffffff;
+    width: 894px;
+    padding: 2rem;
+    border: 1px solid #dddddd;
+}
+
+.content-heading {
+    color: #4aaaa5;
+    margin-bottom: 2rem;
+}
+
+p {
+    line-height: 2;
+}
+
+hr {
+    margin-bottom: 1rem;
+}
+
+/* Styling for the images on the portfolio page */
 .folio {
     height: 175px;
     width: 275px;
-    /* margin: 1rem; */
-    transition: all 1s;
 }
 
-.folio:hover {
+.folio, .image-text {
+    transition: 1s;
+}
+
+.image-container:hover .folio {
     opacity: .1;
+}
+
+.image-container:hover .image-text {
+    opacity: 1;
+    z-index: 1;
 }
 
 .image-container {
     margin-bottom: 1rem;
+    position: relative;
+}
+
+.image-text {
+    background-color: #4aaaa5;
+    color: white;
+    width: 100%;
+    padding: 1rem 0;
+    position: absolute;
+    text-align: center;
+    top: 35%;
+    opacity: 0;
+    z-index: -1;
 }
 
 .image-links {
@@ -47,42 +117,14 @@ nav {
     justify-content: space-between;
 }
 
-#portfolio {
-    border-left: 1px solid gray;
-    border-right: 1px solid gray;
-}
-
-.header-name {
-    background: #4aaaa5;
-    color: white;
-    font-weight: 700;
-    text-align: center;
-    padding: 1.1rem;
-    margin-left: -1rem;
-}
-
-.content-heading {
-    color: #4aaaa5;
-    margin-bottom: 2rem;
-}
-
+/* Styling headshot on index */
 .me {
     float: left;
     width: 33%;
     margin: 1.66%;
 }
 
-h1 {
-    display: inline;
-}
-
-header {
-    background: #ffffff;
-    border-bottom: 2px solid #cccccc;
-    margin-bottom: 2rem;
-    font-family: 'Georgia', Times, 'Times New Roman', serif;
-}
-
+/* form Styling on contact */
 form label{
     display: block;
     margin-bottom: 1rem;
@@ -100,22 +142,4 @@ input[type=submit] {
     padding: 1rem 2rem;
     color: #ffffff;
     font-size: 1.2rem;
-}
-
-body {
-    background-image: url("https://images.unsplash.com/photo-1548685913-fe6678babe8d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1923&q=80");
-    background-repeat: no-repeat;
-    background-attachment: fixed;   
-    background-size: cover;
-    margin-top: 0;
-    color: #777777;
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-}
-
-p {
-    line-height: 2;
-}
-
-hr {
-    margin-bottom: 1rem;
 }
