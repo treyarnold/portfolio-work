@@ -11,6 +11,7 @@
     width: 894px;
     padding: 2rem;
     border: 1px solid #dddddd;
+    /* height: 600px; */
 }
 
 nav {
@@ -22,6 +23,28 @@ nav {
 .heading-link {
     color: gray;
     padding: 0 1rem;
+    text-decoration: none;
+}
+
+.folio {
+    height: 175px;
+    width: 275px;
+    /* margin: 1rem; */
+    transition: all 1s;
+}
+
+.folio:hover {
+    opacity: .1;
+}
+
+.image-container {
+    margin-bottom: 1rem;
+}
+
+.image-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 #portfolio {
@@ -45,6 +68,8 @@ nav {
 
 .me {
     float: left;
+    width: 33%;
+    margin: 1.66%;
 }
 
 h1 {
@@ -74,6 +99,7 @@ input[type=submit] {
     border: none;
     padding: 1rem 2rem;
     color: #ffffff;
+    font-size: 1.2rem;
 }
 
 body {
@@ -92,9 +118,4 @@ p {
 
 hr {
     margin-bottom: 1rem;
-}
-
-img {
-    width: 25%;
-    margin-right: 1rem;
 }
