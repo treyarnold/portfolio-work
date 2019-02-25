@@ -23,11 +23,8 @@ header {
     padding: 1rem 0;
 }
 
-h1 {
-    display: inline;
-}
-
 .header-name {
+    display: inline;
     background: #4aaaa5;
     color: white;
     font-weight: 700;
@@ -46,6 +43,10 @@ nav {
     color: gray;
     padding: 0 1rem;
     text-decoration: none;
+}
+
+.heading-link:hover {
+    color: #000;
 }
 
 #portfolio {
@@ -142,4 +143,19 @@ input[type=submit] {
     padding: 1rem 2rem;
     color: #ffffff;
     font-size: 1.2rem;
+}
+
+/* Footer styling */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4rem;
+    background-color: #444;
+    color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 8px solid #4aaaa5;
 }
